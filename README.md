@@ -12,7 +12,7 @@ the doc and choose "Update Field" to populate it)
 * Summary – Refinement / Technical Improvement (table of all Enhancement
 tickets) + one detailed sub-section per ticket
 * Summary – Defect (table of all Bug tickets) + one detailed sub-section
-per ticket, each ending in a `\[ Paste screenshot here ]` placeholder
+per ticket, each ending in a `\\\[ Paste screenshot here ]` placeholder
 
 **This version has been run end-to-end and its output verified** (converted
 to PDF and visually checked) — no Visual Studio, .NET, or any compiler
@@ -31,7 +31,7 @@ needed. Just Python.
 ## Run
 
 ```
-python release\_note\_gui.py
+python release\\\_note\\\_gui.py
 ```
 
 A window opens:
@@ -45,10 +45,10 @@ included (excluded by default).
 
 ## Files
 
-* `release\_note\_core.py` — all the logic (reading the export, building the
+* `release\\\_note\\\_core.py` — all the logic (reading the export, building the
 .docx). No GUI code here, so it's easy to reuse from a script if you
 ever want to batch-generate without the GUI.
-* `release\_note\_gui.py` — the Tkinter window.
+* `release\\\_note\\\_gui.py` — the Tkinter window.
 
 ## Notes
 
